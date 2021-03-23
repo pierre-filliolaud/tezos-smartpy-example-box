@@ -10,6 +10,3 @@ class SimpleStorage(sp.Contract):
     def set(self, params):
         self.data.storedValue = params.value
 
-    @sp.entry_point
-    def increment(self, params):
-        self.data.storedValue += params.value
